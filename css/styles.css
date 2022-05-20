@@ -1,0 +1,436 @@
+* {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: sanserific;
+    font-size: 1rem;
+    min-height: 100%;
+}
+
+@font-face {
+    font-family: sanserific;
+    src: url('../fonts/Sanseriffic.otf');
+}
+
+
+
+@font-face {
+    font-family: heebo;
+    src: url('../fonts/Heebo-Regular.ttf');
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container>* {
+    padding: 5px;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+
+    grid-template-areas: "header header header"
+        "navbar navbar navbar"
+        "contenido contenido sidebar"
+        "footer footer footer";
+
+}
+
+.header {
+    grid-area: header;
+    background-color: lightcoral;
+}
+
+.navbar {
+    grid-area: navbar;
+
+}
+
+.contenido {
+    grid-area: contenido;
+    margin-top: 5%
+}
+
+.sidebar {
+
+    grid-area: sidebar;
+
+}
+
+.footer {
+
+    grid-area: footer;
+    background: lightcoral;
+}
+
+.mailHeader {
+    padding-right: 70%;
+
+}
+
+.logoMeraki {
+    position: relative;
+    right: 42%;
+    top: 50px;
+}
+
+.header__tittle {
+
+    position: relative;
+    right: 50%;
+    top: 90px;
+    font-size: 1.4rem;
+
+}
+
+.navegator {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-size: 1.1rem;
+    font-family: heebo;
+
+
+}
+
+.liLinks {
+
+    border-radius: 10px;
+    background-color: lightcoral;
+
+}
+
+.cT {
+    color: white;
+}
+
+a:hover {
+    transition: 0.5s;
+    color: rgb(182, 65, 65);
+}
+
+.subtituloHome {
+    margin-left: 10%;
+    font-family: heebo;
+    color: rgb(182, 65, 65);
+    font-size: 2rem;
+    margin-top: 5%;
+}
+
+.textoHome {
+    margin-right: 10%;
+    margin-left: 22%;
+    margin-top: 100px;
+    font-size: 1.3rem;
+    font-family: heebo;
+    color: rgb(100, 89, 89);
+}
+
+.subtituloHome2 {
+    margin-left: 8%;
+    margin-top: 15%;
+    font-family: heebo;
+    color: rgb(182, 65, 65);
+    font-size: 2rem;
+
+
+}
+
+.textHome2 {
+    margin-right: 10%;
+    margin-left: 20%;
+    margin-top: 150px;
+    font-size: 1.3rem;
+    font-family: heebo;
+    color: rgb(100, 89, 89)
+}
+
+.neneHome {
+    position: relative;
+    right: 18%;
+    top: 10%;
+    border: 2px solid rgb(182, 65, 65);
+    border-radius: 6px;
+}
+
+.nenaHome {
+    position: relative;
+    right: 18%;
+    top: 15%;
+    border: 2px solid rgb(182, 65, 65);
+    border-radius: 6px;
+
+}
+
+.links {
+    text-align: left;
+    margin-left: 15px;
+    font-family: heebo;
+
+}
+
+.linksColor:hover {
+
+    color: white;
+    transition: 0.5s;
+
+}
+
+.politica {
+    text-align: right;
+    font-family: heebo;
+    margin-right: 15px;
+}
+
+.logoH {
+
+    margin: 5px;
+}
+
+.quienesSomos {
+
+    margin-left: 15%;
+    margin-right: 30%;
+    margin-top: 15%;
+    margin-bottom: 30%;
+    font-family: heebo;
+    font-size: 1.1rem;
+
+}
+
+.quienesSomosM {
+
+    position: relative;
+    right: 65%;
+    top: 15%;
+    border: 2px solid rgb(182, 65, 65);
+    border-radius: 10px;
+    box-shadow: 2px 4px 15px 0 grey;
+
+}
+
+.textInfo {
+
+    margin: 25px;
+}
+
+.textForm {
+
+    margin: 80px;
+}
+
+
+.form {
+
+    margin-bottom: 300px;
+}
+
+.formulario {
+    font-family: heebo;
+    font-size: 1rem;
+
+}
+
+.sub__tittle {
+    font-size: 1.6rem;
+    margin-top: 6%;
+    margin-bottom: 3%;
+    text-align: center;
+    color: rgb(182, 65, 65);
+    font-family: heebo;
+}
+
+
+
+.sub__tittle2 {
+    font-size: 1.6rem;
+    margin-top: 6%;
+    margin-bottom: 3%;
+    text-align: center;
+    color: rgb(182, 65, 65);
+    font-family: heebo;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.textPF {
+    font-family: heebo;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 1rem;
+}
+
+.listaPF {
+
+    font-family: heebo;
+    margin-top: 2%;
+
+
+}
+
+.textPF1 {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 10%;
+    font-family: heebo;
+    font-size: 1rem;
+}
+
+.textServicios {
+
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 10%;
+    font-family: heebo;
+    font-size: 1rem;
+}
+
+.listaS {
+
+
+    font-family: heebo;
+    margin-bottom: 10%;
+}
+
+
+
+@media (max-width:768px) {
+    .container {
+        grid-template-areas: "header"
+            "navbar"
+            "contenido"
+            "sidebar"
+            "footer";
+        /*  grid-template:
+            "header"30px "navbar"500px "main"auto"footer"auto */
+    }
+
+    .header {
+        font-size: 0.6rem;
+
+    }
+
+    .header__tittle {
+        display: none;
+        position: absolute;
+        right: 46%;
+        bottom: 200px;
+        font-size: 0.9rem;
+    }
+
+    .mailHeader {
+        padding-right: 10%;
+
+    }
+
+    .logoMeraki {
+        display: none;
+        position: absolute;
+        right: 30%;
+        bottom: 400px;
+        width: 60px;
+        height: 60px;
+
+    }
+
+    .navegator {
+        display: block;
+        text-align: center;
+        justify-content: center;
+        font-size: 0.7rem;
+    }
+
+
+    .textPF {
+        font-size: 0.6rem
+    }
+
+    .textPF1 {
+        font-size: 0.6rem
+    }
+
+    .sub__tittle {
+        font-size: 0.8rem
+    }
+
+    .listaPF {
+        font-size: 0.6rem
+    }
+
+    .footer {
+        font-size: 0.8rem;
+    }
+
+
+    .sub__tittle2 {
+        font-size: 0.6rem;
+    }
+
+    .listaS {
+        font-size: 0.6rem;
+    }
+
+    .textServicios {
+        font-size: 0.6rem;
+    }
+
+    .subtituloHome {
+        font-size: 1rem;
+    }
+
+    .subtituloHome2 {
+        font-size: 1rem;
+    }
+
+    .textoHome {
+        font-size: 0.6rem;
+    }
+
+    .textHome2 {
+        font-size: 0.6rem;
+    }
+
+    .neneHome {
+        margin-left: 27%;
+    }
+
+    .nenaHome {
+        margin-left: 27%;
+    }
+
+    .quienesSomos {
+
+        font-size: 0.7rem;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    
+    .quienesSomosM {
+    
+        position: relative;
+        left: 1%;
+    }
+
+    .mapaGoogle {
+        width: 390px;
+        height: 400px;
+    }
+    .textInfo{
+        font-size: 0.7rem;
+    }
+
+    .textForm{
+        font-size: 0.7rem;
+    }
+}
