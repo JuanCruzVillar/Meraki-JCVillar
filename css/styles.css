@@ -32,13 +32,14 @@ a {
     color: black;
 }
 
-.container>* {
+.container1>* {
     padding: 5px;
     text-align: center;
 }
 
-.container {
+.container1 {
     display: grid;
+
 
     grid-template-areas: "header header header"
         "navbar navbar navbar"
@@ -50,10 +51,14 @@ a {
 .header {
     grid-area: header;
     background-color: lightcoral;
+
 }
 
 .navbar {
     grid-area: navbar;
+    justify-content: center;
+
+
 
 }
 
@@ -79,30 +84,45 @@ a {
 
 }
 
-.logoMeraki {
+.img-fluid {
     position: relative;
-    right: 42%;
-    top: 50px;
+    right: 20%;
 }
 
 .header__tittle {
 
     position: relative;
-    right: 49%;
+    right: 28%;
     top: 90px;
-    font-size: 1.4rem;
+    font-size: 2rem;
 
 }
 
-.navegator {
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-    font-size: 1.1rem;
+
+
+
+.nav-item {
+
     font-family: heebo;
 
+}
+
+
+
+.nav-link {
+
+    color: lightcoral;
+    font-size: 1.3rem;
+}
+
+.nav-link:hover {
+    transition: 0.5s;
+    color: rgb(182, 65, 65);
+
 
 }
+
+
 
 .liLinks {
 
@@ -116,7 +136,7 @@ a {
     background-color: white;
     transform: scale(1.2);
     transition: transform 0.7s;
-    
+
 
 
 }
@@ -134,7 +154,7 @@ a:hover {
     margin-left: 10%;
     font-family: heebo;
     color: rgb(182, 65, 65);
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-top: 5%;
 }
 
@@ -142,26 +162,28 @@ a:hover {
     margin-right: 10%;
     margin-left: 22%;
     margin-top: 100px;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-family: heebo;
     color: rgb(100, 89, 89);
 }
 
 .subtituloHome2 {
+
     margin-left: 8%;
     margin-top: 15%;
     font-family: heebo;
     color: rgb(182, 65, 65);
-    font-size: 2rem;
+    font-size: 1.8rem;
 
 
 }
 
 .textHome2 {
+
     margin-right: 10%;
     margin-left: 20%;
     margin-top: 150px;
-    font-size: 1.3rem;
+    font-size: 1.11rem;
     font-family: heebo;
     color: rgb(100, 89, 89)
 }
@@ -236,15 +258,19 @@ a:hover {
 }
 
 .textForm {
-
+    color: rgb(182, 65, 65);
     margin: 80px;
 }
 
+.col-md-4 {
+    font-family: heebo;
 
-.form {
-
-    margin-bottom: 300px;
 }
+
+.col-12 {
+    margin-bottom: 200px;
+}
+
 
 .formulario {
     font-family: heebo;
@@ -253,7 +279,7 @@ a:hover {
 }
 
 .sub__tittle {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     margin-top: 6%;
     margin-bottom: 3%;
     text-align: center;
@@ -261,10 +287,15 @@ a:hover {
     font-family: heebo;
 }
 
+.list-group-item {
+    font-family: heebo;
+
+}
+
 
 
 .sub__tittle2 {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     margin-top: 6%;
     margin-bottom: 3%;
     text-align: center;
@@ -314,16 +345,61 @@ a:hover {
 }
 
 
+.form1 {
+    font-family: heebo;
+}
 
-@media (max-width:768px) {
-    .container {
+.btn-primary {
+
+    font-family: heebo;
+}
+
+#carouselExampleControls {
+    width: 800px;
+    margin-left: 30%;
+    border: 2px solid rgb(182, 65, 65);
+    border-radius: 6px;
+    margin-bottom: 20%;
+
+}
+
+
+
+
+/* .btn-wsp
+{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #0df053;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0,0.3);
+    z-index: 100;
+}
+
+.btn-wsp:hover{
+text-decoration: none;
+color: #0df053;
+background-color: #fff;
+
+} */
+
+
+
+@media (max-width:576px) {
+    .container1 {
         grid-template-areas: "header"
             "navbar"
             "contenido"
             "sidebar"
             "footer";
-        /*  grid-template:
-            "header"30px "navbar"500px "main"auto"footer"auto */
+
     }
 
     .header {
@@ -344,7 +420,7 @@ a:hover {
 
     }
 
-    .logoMeraki {
+    .img-fluid {
         display: none;
         position: absolute;
         right: 30%;
@@ -354,13 +430,15 @@ a:hover {
 
     }
 
-    .navegator {
+    .nav-pills {
         display: block;
-        text-align: center;
-        justify-content: center;
-        font-size: 0.7rem;
+
     }
 
+    .nav-link {
+        font-size: 0.85rem;
+
+    }
 
     .textPF {
         font-size: 0.6rem
@@ -371,10 +449,11 @@ a:hover {
     }
 
     .sub__tittle {
-        font-size: 0.8rem
+        font-size: 0.8rem;
+        margin-bottom: 30px;
     }
 
-    .listaPF {
+    .list-group-item {
         font-size: 0.6rem
     }
 
@@ -385,6 +464,7 @@ a:hover {
 
     .sub__tittle2 {
         font-size: 0.6rem;
+        margin-bottom: 30px;
     }
 
     .listaS {
@@ -396,19 +476,23 @@ a:hover {
     }
 
     .subtituloHome {
+        margin-right: 20px;
         font-size: 1rem;
     }
 
     .subtituloHome2 {
         font-size: 1rem;
+        margin-right: 20px;
     }
 
     .textoHome {
         font-size: 0.6rem;
+        margin-right: 60px;
     }
 
     .textHome2 {
         font-size: 0.6rem;
+        margin-right: 60px;
     }
 
     .neneHome {
@@ -425,22 +509,187 @@ a:hover {
         margin-right: 5%;
         margin-left: 5%;
     }
-    
+
     .quienesSomosM {
-    
+
         position: relative;
         left: 1%;
     }
 
     .mapaGoogle {
-        width: 390px;
+        width: 380px;
         height: 400px;
     }
-    .textInfo{
+
+    .textInfo {
         font-size: 0.7rem;
     }
 
-    .textForm{
+    .textForm {
         font-size: 0.7rem;
     }
+
+    .col-md-4 {
+        font-size: 0.7rem;
+
+    }
+
+    .form-control {
+        font-size: 0.7rem;
+    }
+
+    .btn-primary {
+        font-size: 0.7rem;
+
+    }
+}
+
+@media (min-width:576px) and (max-width:768px) {
+    .container1 {
+        grid-template-areas: "header header"
+            "navbar navbar"
+            "contenido sidebar"
+            "contenido sidebar"
+            "footer footer";
+
+    }
+
+    .header {
+        font-size: 0.8rem;
+
+
+    }
+
+    .header__tittle {
+        position: relative;
+        font-size: 1.5rem;
+    }
+
+    .mailHeader {
+        padding-right: 30%;
+
+    }
+
+    .img-fluid {
+        position: absolute;
+        width: 200px;
+        height: 120px;
+        right: 77%;
+
+    }
+
+    .nav-pills {
+        display: inline-block;
+        justify-content: right;
+
+    }
+
+    .nav-link {
+        font-size: 1rem;
+
+    }
+
+    .textPF {
+        font-size: 0.8rem
+    }
+
+    .textPF1 {
+        font-size: 0.8rem
+    }
+
+    .sub__tittle {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    .list-group-item {
+        font-size: 0.8rem
+    }
+
+    .footer {
+        font-size: 0.8rem;
+    }
+
+
+    .sub__tittle2 {
+        font-size: 0.8rem;
+        margin-bottom: 30px;
+    }
+
+    .listaS {
+        font-size: 0.8rem;
+    }
+
+    .textServicios {
+        font-size: 0.8rem;
+    }
+
+    .subtituloHome {
+        margin-right: 20px;
+        font-size: 1.2rem;
+    }
+
+    .subtituloHome2 {
+        font-size: 1.2rem;
+        margin-right: 20px;
+    }
+
+    .textoHome {
+        font-size: 0.8rem;
+        margin-right: 60px;
+    }
+
+    .textHome2 {
+        font-size: 0.8rem;
+        margin-right: 60px;
+    }
+
+    .neneHome {
+        margin-left: 27%;
+    }
+
+    .nenaHome {
+        margin-left: 27%;
+    }
+
+    .quienesSomos {
+
+        font-size: 0.8rem;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .quienesSomosM {
+
+        position: relative;
+        left: 1%;
+    }
+
+    .mapaGoogle {
+        width: 768px;
+        height: 400px;
+    }
+
+    .textInfo {
+        font-size: 0.8rem;
+    }
+
+    .textForm {
+        font-size: 0.8rem;
+    }
+
+    .col-md-4 {
+        font-size: 0.8rem;
+
+    }
+
+    .form-control {
+        font-size: 0.8rem;
+    }
+
+    .btn-primary {
+        font-size: 0.8rem;
+
+    }
+
 }
