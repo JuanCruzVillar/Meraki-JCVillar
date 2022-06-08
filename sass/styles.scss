@@ -1,0 +1,734 @@
+@import 'mixins';
+
+* {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: sanserific;
+    font-size: 1rem;
+    min-height: 100%;
+}
+
+@font-face {
+    font-family: sanserific;
+    src: url('../fonts/Sanseriffic.otf');
+}
+
+
+
+@font-face {
+    font-family: heebo;
+    src: url('../fonts/Heebo-Regular.ttf');
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container1>* {
+    padding: 5px;
+    text-align: center;
+}
+
+.container1 {
+    display: grid;
+
+
+    grid-template-areas: "header header header"
+        "navbar navbar navbar"
+        "contenido contenido sidebar"
+        "footer footer footer";
+
+}
+
+.header {
+    grid-area: header;
+    background-color: lightcoral;
+
+}
+
+.navbar {
+    grid-area: navbar;
+    justify-content: center;
+
+
+
+}
+
+.contenido {
+    grid-area: contenido;
+    margin-top: 5%
+}
+
+.sidebar {
+
+    grid-area: sidebar;
+
+}
+
+.footer {
+
+    grid-area: footer;
+    background: lightcoral;
+}
+
+.mailHeader {
+    padding-right: 70%;
+
+}
+
+.img-fluid {
+    position: relative;
+    right: 20%;
+}
+
+.header__tittle {
+
+    position: relative;
+    right: 28%;
+    top: 90px;
+    font-size: 2rem;
+
+}
+
+
+
+
+.nav-item {
+
+    font-family: heebo;
+
+}
+
+
+
+.nav-link {
+
+    color: lightcoral;
+    font-size: 1.3rem;
+
+    &:hover {
+        transition: 0.5s;
+        color: rgb(182, 65, 65);
+    
+    
+    }
+    
+}
+
+.liLinks {
+
+    border-radius: 10px;
+    background-color: lightcoral;
+
+    &:hover {
+
+        background-color: white;
+        transform: scale(1.2);
+        transition: transform 0.7s;
+    }
+}
+
+
+
+a:hover {
+    transition: 0.5s;
+    color: rgb(182, 65, 65);
+}
+
+.subtituloHome {
+    margin-left: 10%;
+    font-family: heebo;
+    color: rgb(182, 65, 65);
+    font-size: 1.8rem;
+    margin-top: 5%;
+}
+
+.textoHome {
+    margin-right: 10%;
+    margin-left: 22%;
+    margin-top: 100px;
+    font-size: 1.1rem;
+    font-family: heebo;
+    color: rgb(100, 89, 89);
+}
+
+.subtituloHome2 {
+
+    margin-left: 8%;
+    margin-top: 15%;
+    font-family: heebo;
+    color: rgb(182, 65, 65);
+    font-size: 1.8rem;
+
+
+}
+
+.textHome2 {
+
+    margin-right: 10%;
+    margin-left: 20%;
+    margin-top: 150px;
+    font-size: 1.11rem;
+    font-family: heebo;
+    color: rgb(100, 89, 89)
+}
+
+.neneHome {
+    position: relative;
+    right: 18%;
+    top: 10%;
+    border: 2px solid rgb(182, 65, 65);
+    border-radius: 6px;
+}
+
+.nenaHome {
+    position: relative;
+    right: 18%;
+    top: 15%;
+    border: 2px solid rgb(182, 65, 65);
+    border-radius: 6px;
+
+}
+
+
+.links {
+    @include footerL;
+
+}
+
+.linksColor:hover {
+
+    color: white;
+    transition: 0.5s;
+
+}
+
+.politica {
+    text-align: right;
+    font-family: heebo;
+    margin-right: 15px;
+}
+
+.whatsapp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    
+    border-radius: 50px;
+    
+    z-index: 100;
+}
+
+.logoH {
+
+    margin: 5px;
+}
+
+.quienesSomos {
+
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-family: heebo;
+    font-size: 1.1rem;
+
+}
+
+.quienesSomosM {
+
+    position: relative;
+    right: 65%;
+    top: 15%;
+    border: 2px solid rgb(182, 65, 65);
+    border-radius: 10px;
+    box-shadow: 2px 4px 15px 0 grey;
+
+}
+
+.textInfo {
+
+    margin: 25px;
+}
+
+.textForm {
+    color: rgb(182, 65, 65);
+    margin: 80px;
+}
+
+.col-md-4 {
+    font-family: heebo;
+
+}
+
+.col-12 {
+    margin-bottom: 200px;
+}
+
+
+.formulario {
+    font-family: heebo;
+    font-size: 1rem;
+
+}
+
+.sub__tittle {
+    font-size: 1.3rem;
+    margin-top: 6%;
+    margin-bottom: 3%;
+    text-align: center;
+    color: rgb(182, 65, 65);
+    font-family: heebo;
+}
+
+.sub__tittle--form {
+    @extend .sub__tittle;
+    border: 2px solid rgb(214, 89, 89);
+    background-color: rgb(250, 114, 114);
+    border-radius: 10px;
+    color: white;
+    
+    }
+    
+
+.list-group-item {
+    font-family: heebo;
+
+}
+
+
+
+.sub__tittle2 {
+    font-size: 1.3rem;
+    margin-top: 6%;
+    margin-bottom: 3%;
+    text-align: center;
+    color: rgb(182, 65, 65);
+    font-family: heebo;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.textPF {
+    font-family: heebo;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 1rem;
+}
+
+.listaPF {
+
+    font-family: heebo;
+    margin-top: 2%;
+
+
+}
+
+.textPF1 {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 10%;
+    font-family: heebo;
+    font-size: 1rem;
+}
+
+.textServicios {
+
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 10%;
+    font-family: heebo;
+    font-size: 1rem;
+}
+
+.listaS {
+
+
+    font-family: heebo;
+    margin-bottom: 10%;
+}
+
+
+.form1 {
+    font-family: heebo;
+}
+
+.btn-primary {
+
+    font-family: heebo;
+}
+
+#carouselExampleControls {
+    width: 800px;
+    margin-left: 30%;
+    border: 2px solid rgb(182, 65, 65);
+    border-radius: 6px;
+    margin-bottom: 20%;
+
+}
+
+.card-text {
+    font-family: heebo;
+}
+
+.card-title {
+    font-family: heebo;
+}
+
+.card-img-top {
+    width: 50%;
+    margin-left: 130px;
+    border: 2px solid rgb(182, 65, 65);
+    border-radius: 6px;
+
+
+
+}
+
+
+.d-block w-100 {
+    height: 20%;
+    width: 20%;
+}
+
+@media (max-width:576px) {
+    .container1 {
+        grid-template-areas: "header"
+            "navbar"
+            "contenido"
+            "sidebar"
+            "footer";
+
+    }
+
+    .header {
+        font-size: 0.6rem;
+
+    }
+
+    .header__tittle {
+        display: none;
+        position: absolute;
+        right: 46%;
+        bottom: 200px;
+        font-size: 0.9rem;
+    }
+
+    .mailHeader {
+        padding-right: 10%;
+
+    }
+
+    .img-fluid {
+        display: none;
+        position: absolute;
+        right: 30%;
+        bottom: 400px;
+        width: 60px;
+        height: 60px;
+
+    }
+
+    .nav-pills {
+        display: block;
+
+    }
+
+    .nav-link {
+        font-size: 0.85rem;
+
+    }
+
+    .textPF {
+        font-size: 0.6rem
+    }
+
+    .textPF1 {
+        font-size: 0.6rem
+    }
+
+    .sub__tittle {
+        font-size: 0.8rem;
+        margin-bottom: 30px;
+    }
+
+    .list-group-item {
+        font-size: 0.6rem
+    }
+
+    .footer {
+        font-size: 0.8rem;
+    }
+
+
+    .sub__tittle2 {
+        font-size: 0.6rem;
+        margin-bottom: 30px;
+    }
+
+    .listaS {
+        font-size: 0.6rem;
+    }
+
+    .textServicios {
+        font-size: 0.6rem;
+    }
+
+    .subtituloHome {
+        margin-right: 20px;
+        font-size: 1rem;
+    }
+
+    .subtituloHome2 {
+        font-size: 1rem;
+        margin-right: 20px;
+    }
+
+    .textoHome {
+        font-size: 0.6rem;
+        margin-right: 60px;
+    }
+
+    .textHome2 {
+        font-size: 0.6rem;
+        margin-right: 60px;
+    }
+
+    .neneHome {
+        margin-left: 27%;
+    }
+
+    .nenaHome {
+        margin-left: 27%;
+    }
+
+    .quienesSomos {
+
+        font-size: 0.7rem;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .quienesSomosM {
+
+        position: relative;
+        left: 1%;
+    }
+
+    .mapaGoogle {
+        
+        width: 380px;
+        height: 400px;
+    }
+
+    .textInfo {
+        font-size: 0.7rem;
+    }
+
+    .textForm {
+        font-size: 0.7rem;
+    }
+
+    .col-md-4 {
+        font-size: 0.7rem;
+
+    }
+
+    .form-control {
+        font-size: 0.7rem;
+    }
+
+    .btn-primary {
+        font-size: 0.7rem;
+
+    }
+
+    .card-img-top {
+
+        margin-left: 27%;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .card-text {
+        font-size: 0.7rem;
+    }
+}
+
+@media (min-width:576px) and (max-width:768px) {
+    .container1 {
+        grid-template-areas: "header header"
+            "navbar navbar"
+            "contenido sidebar"
+            "contenido sidebar"
+            "footer footer";
+
+    }
+
+    .header {
+        font-size: 0.8rem;
+
+
+    }
+
+    .header__tittle {
+        position: relative;
+        font-size: 1.5rem;
+    }
+
+    .mailHeader {
+        padding-right: 30%;
+
+    }
+
+    .img-fluid {
+        position: absolute;
+        width: 200px;
+        height: 120px;
+        right: 77%;
+
+    }
+
+    .nav-pills {
+        display: inline-block;
+        justify-content: right;
+
+    }
+
+    .nav-link {
+        font-size: 1rem;
+
+    }
+
+    .textPF {
+        font-size: 0.8rem
+    }
+
+    .textPF1 {
+        font-size: 0.8rem
+    }
+
+    .sub__tittle {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    .list-group-item {
+        font-size: 0.8rem
+    }
+
+    .footer {
+        font-size: 0.8rem;
+    }
+
+
+    .sub__tittle2 {
+        font-size: 0.8rem;
+        margin-bottom: 30px;
+    }
+
+    .listaS {
+        font-size: 0.8rem;
+    }
+
+    .textServicios {
+        font-size: 0.8rem;
+    }
+
+    .subtituloHome {
+        margin-right: 20px;
+        font-size: 1.2rem;
+    }
+
+    .subtituloHome2 {
+        font-size: 1.2rem;
+        margin-right: 20px;
+    }
+
+    .textoHome {
+        font-size: 0.8rem;
+        margin-right: 60px;
+    }
+
+    .textHome2 {
+        font-size: 0.8rem;
+        margin-right: 60px;
+    }
+
+    .neneHome {
+        margin-left: 27%;
+    }
+
+    .nenaHome {
+        margin-left: 27%;
+    }
+
+    .quienesSomos {
+
+        font-size: 0.8rem;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .quienesSomosM {
+
+        position: relative;
+        left: 1%;
+    }
+
+    .mapaGoogle {
+        width: 768px;
+        height: 400px;
+    }
+
+    .textInfo {
+        font-size: 0.8rem;
+    }
+
+    .textForm {
+        font-size: 0.8rem;
+    }
+
+    .col-md-4 {
+        font-size: 0.8rem;
+
+    }
+
+    .form-control {
+        font-size: 0.8rem;
+    }
+
+    .btn-primary {
+        font-size: 0.8rem;
+
+    }
+
+    .card-img-top {
+
+        margin-left: 30%;
+
+    }
+
+    .card-title {
+        font-size: 1.3rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+}
