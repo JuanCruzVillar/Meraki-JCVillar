@@ -438,3 +438,169 @@ a:hover {
     font-size: 1.3rem; }
   .card-text {
     font-size: 0.9rem; } }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .container1 {
+    grid-template-areas: "header header" "navbar navbar" "contenido sidebar" "contenido sidebar" "footer footer"; }
+  .header {
+    font-size: 0.8rem; }
+  .header__tittle {
+    position: relative;
+    font-size: 1.5rem; }
+  .mailHeader {
+    padding-right: 30%; }
+  .img-fluid {
+    position: absolute;
+    width: 200px;
+    height: 120px;
+    right: 77%; }
+  .nav-pills {
+    display: inline-block;
+    justify-content: right; }
+  .nav-link {
+    font-size: 1rem; }
+  .textPF {
+    font-size: 1rem; }
+  .textPF1 {
+    font-size: 1rem; }
+  .sub__tittle, .sub__tittle--form {
+    font-size: 1.2rem;
+    margin-bottom: 30px; }
+  .list-group-item {
+    font-size: 1rem; }
+  .footer {
+    font-size: 1rem; }
+  .sub__tittle2 {
+    font-size: 1rem;
+    margin-bottom: 30px; }
+  .listaS {
+    font-size: 1rem; }
+  .textServicios {
+    font-size: 1rem; }
+  .subtituloHome {
+    margin-right: 20px;
+    font-size: 1.2rem; }
+  .subtituloHome2 {
+    font-size: 1.2rem;
+    margin-right: 20px; }
+  .textoHome {
+    font-size: 1rem;
+    margin-right: 60px; }
+  .textHome2 {
+    font-size: 1rem;
+    margin-right: 60px; }
+  .neneHome {
+    margin-left: 27%; }
+  .nenaHome {
+    margin-left: 27%; }
+  .quienesSomos {
+    font-size: 1rem;
+    margin-right: 5%;
+    margin-left: 5%; }
+  .quienesSomosM {
+    position: relative;
+    left: 1%; }
+  .mapaGoogle {
+    width: 990px;
+    height: 400px; }
+  .textInfo {
+    font-size: 1rem; }
+  .textForm {
+    font-size: 1rem; }
+  .col-md-4 {
+    font-size: 1rem; }
+  .form-control {
+    font-size: 1rem; }
+  .btn-primary {
+    font-size: 1rem; }
+  .card-img-top {
+    margin-left: 30%; }
+  .card-title {
+    font-size: 1.4rem; }
+  .card-text {
+    font-size: 1.1rem; }
+  .whatsapp {
+    display: none; } }
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .container1 {
+    grid-template-areas: "header header" "navbar navbar" "contenido sidebar" "contenido sidebar" "footer footer"; }
+  .header {
+    font-size: 1rem; }
+  .header__tittle {
+    position: relative;
+    font-size: 1.5rem; }
+  .mailHeader {
+    padding-right: 30%; }
+  .img-fluid {
+    position: absolute;
+    width: 200px;
+    height: 120px;
+    right: 77%; }
+  .nav-pills {
+    display: inline-block;
+    justify-content: right; }
+  .nav-link {
+    font-size: 1rem; }
+  .textPF {
+    font-size: 1rem; }
+  .textPF1 {
+    font-size: 1rem; }
+  .sub__tittle, .sub__tittle--form {
+    font-size: 1.2rem;
+    margin-bottom: 30px; }
+  .list-group-item {
+    font-size: 1rem; }
+  .footer {
+    font-size: 1rem; }
+  .sub__tittle2 {
+    font-size: 1rem;
+    margin-bottom: 30px; }
+  .listaS {
+    font-size: 1rem; }
+  .textServicios {
+    font-size: 1rem; }
+  .subtituloHome {
+    margin-right: 20px;
+    font-size: 1.2rem; }
+  .subtituloHome2 {
+    font-size: 1.2rem;
+    margin-right: 20px; }
+  .textoHome {
+    font-size: 1rem;
+    margin-right: 60px; }
+  .textHome2 {
+    font-size: 1rem;
+    margin-right: 60px; }
+  .neneHome {
+    margin-left: 27%; }
+  .nenaHome {
+    margin-left: 27%; }
+  .quienesSomos {
+    font-size: 1rem;
+    margin-right: 5%;
+    margin-left: 5%; }
+  .quienesSomosM {
+    position: relative;
+    left: 1%; }
+  .mapaGoogle {
+    width: 1198px;
+    height: 400px; }
+  .textInfo {
+    font-size: 1rem; }
+  .textForm {
+    font-size: 1rem; }
+  .col-md-4 {
+    font-size: 1rem; }
+  .form-control {
+    font-size: 1rem; }
+  .btn-primary {
+    font-size: 1rem; }
+  .card-img-top {
+    margin-left: 30%; }
+  .card-title {
+    font-size: 1.4rem; }
+  .card-text {
+    font-size: 1.1rem; }
+  .whatsapp {
+    display: none; } }
