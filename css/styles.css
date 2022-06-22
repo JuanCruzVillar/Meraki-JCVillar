@@ -1,10 +1,10 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0; }
 
 html {
-  height: 100%; }
+  height: 100%;
+  width: 100%; }
 
 body {
   font-family: sanserific;
@@ -50,6 +50,7 @@ a {
   grid-area: footer;
   background: lightcoral; }
 
+/* HEADER */
 .mailHeader {
   padding-right: 70%; }
 
@@ -59,10 +60,12 @@ a {
 
 .header__tittle {
   position: relative;
-  right: 28%;
+  right: 10%;
   top: 90px;
   font-size: 2rem; }
 
+/* HEADER */
+/* NAVBAR */
 .nav-item {
   font-family: heebo; }
 
@@ -73,18 +76,8 @@ a {
     transition: 0.5s;
     color: #b64141; }
 
-.liLinks {
-  border-radius: 10px;
-  background-color: lightcoral; }
-  .liLinks:hover {
-    background-color: white;
-    transform: scale(1.2);
-    transition: transform 0.7s; }
-
-a:hover {
-  transition: 0.5s;
-  color: #b64141; }
-
+/* NAVBAR */
+/* MAIN */
 .subtituloHome {
   margin-left: 10%;
   font-family: heebo;
@@ -129,6 +122,18 @@ a:hover {
   border: 2px solid #b64141;
   border-radius: 6px; }
 
+.whatsapp {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 50px;
+  z-index: 100; }
+
+/* MAIN */
+/* FOOTER */
 .links {
   text-align: left;
   margin-left: 15px;
@@ -143,19 +148,11 @@ a:hover {
   font-family: heebo;
   margin-right: 15px; }
 
-.whatsapp {
-  position: fixed;
-  width: 55px;
-  height: 55px;
-  line-height: 55px;
-  bottom: 30px;
-  right: 30px;
-  border-radius: 50px;
-  z-index: 100; }
-
 .logoH {
   margin: 5px; }
 
+/* FOOTER */
+/* QUIENES SOMOS  */
 .quienesSomos {
   margin-left: 15%;
   margin-right: 15%;
@@ -163,14 +160,6 @@ a:hover {
   margin-bottom: 10%;
   font-family: heebo;
   font-size: 1.1rem; }
-
-.quienesSomosM {
-  position: relative;
-  right: 65%;
-  top: 15%;
-  border: 2px solid #b64141;
-  border-radius: 10px;
-  box-shadow: 2px 4px 15px 0 grey; }
 
 .textInfo {
   margin: 25px; }
@@ -250,13 +239,6 @@ a:hover {
 .btn-primary {
   font-family: heebo; }
 
-#carouselExampleControls {
-  width: 800px;
-  margin-left: 30%;
-  border: 2px solid #b64141;
-  border-radius: 6px;
-  margin-bottom: 20%; }
-
 .card-text {
   font-family: heebo; }
 
@@ -277,7 +259,8 @@ a:hover {
   .container1 {
     grid-template-areas: "header" "navbar" "contenido" "sidebar" "footer"; }
   .header {
-    font-size: 0.6rem; }
+    font-size: 0.6rem;
+    width: 100vw; }
   .header__tittle {
     display: none;
     position: absolute;
@@ -453,7 +436,8 @@ a:hover {
     position: absolute;
     width: 200px;
     height: 120px;
-    right: 77%; }
+    right: 59%;
+    bottom: 60px; }
   .nav-pills {
     display: inline-block;
     justify-content: right; }

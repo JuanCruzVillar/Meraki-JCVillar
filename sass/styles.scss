@@ -1,14 +1,14 @@
 @import 'mixins';
 
 * {
-
-    box-sizing: border-box;
+    
     margin: 0;
     padding: 0;
 }
 
 html {
     height: 100%;
+    width: 100%;
 }
 
 body {
@@ -53,6 +53,7 @@ a {
 .header {
     grid-area: header;
     background-color: lightcoral;
+    
 
 }
 
@@ -81,6 +82,8 @@ a {
     background: lightcoral;
 }
 
+/* HEADER */
+
 .mailHeader {
     padding-right: 70%;
 
@@ -94,14 +97,16 @@ a {
 .header__tittle {
 
     position: relative;
-    right: 28%;
+    right: 10%;
     top: 90px;
     font-size: 2rem;
 
 }
 
 
+/* HEADER */
 
+/* NAVBAR */
 
 .nav-item {
 
@@ -119,31 +124,19 @@ a {
     &:hover {
         transition: 0.5s;
         color: rgb(182, 65, 65);
-    
-    
+
+
     }
-    
+
 }
 
-.liLinks {
-
-    border-radius: 10px;
-    background-color: lightcoral;
-
-    &:hover {
-
-        background-color: white;
-        transform: scale(1.2);
-        transition: transform 0.7s;
-    }
-}
+/* NAVBAR */
 
 
 
-a:hover {
-    transition: 0.5s;
-    color: rgb(182, 65, 65);
-}
+
+/* MAIN */
+
 
 .subtituloHome {
     margin-left: 10%;
@@ -201,6 +194,24 @@ a:hover {
 }
 
 
+.whatsapp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+
+    border-radius: 50px;
+
+    z-index: 100;
+}
+
+/* MAIN */
+
+
+/* FOOTER */
+
 .links {
     @include footerL;
 
@@ -219,23 +230,16 @@ a:hover {
     margin-right: 15px;
 }
 
-.whatsapp {
-    position: fixed;
-    width: 55px;
-    height: 55px;
-    line-height: 55px;
-    bottom: 30px;
-    right: 30px;
-    
-    border-radius: 50px;
-    
-    z-index: 100;
-}
-
 .logoH {
 
     margin: 5px;
 }
+
+
+/* FOOTER */
+
+
+/* QUIENES SOMOS  */
 
 .quienesSomos {
 
@@ -248,16 +252,6 @@ a:hover {
 
 }
 
-.quienesSomosM {
-
-    position: relative;
-    right: 65%;
-    top: 15%;
-    border: 2px solid rgb(182, 65, 65);
-    border-radius: 10px;
-    box-shadow: 2px 4px 15px 0 grey;
-
-}
 
 .textInfo {
 
@@ -300,9 +294,9 @@ a:hover {
     background-color: rgb(250, 114, 114);
     border-radius: 10px;
     color: white;
-    
-    }
-    
+
+}
+
 
 .list-group-item {
     font-family: heebo;
@@ -371,14 +365,6 @@ a:hover {
     font-family: heebo;
 }
 
-#carouselExampleControls {
-    width: 800px;
-    margin-left: 30%;
-    border: 2px solid rgb(182, 65, 65);
-    border-radius: 6px;
-    margin-bottom: 20%;
-
-}
 
 .card-text {
     font-family: heebo;
@@ -414,8 +400,11 @@ a:hover {
 
     }
 
+
+
     .header {
         font-size: 0.6rem;
+        width: 100vw;
 
     }
 
@@ -529,7 +518,7 @@ a:hover {
     }
 
     .mapaGoogle {
-        
+
         width: 380px;
         height: 400px;
     }
@@ -753,6 +742,7 @@ a:hover {
     .header__tittle {
         position: relative;
         font-size: 1.5rem;
+
     }
 
     .mailHeader {
@@ -764,7 +754,8 @@ a:hover {
         position: absolute;
         width: 200px;
         height: 120px;
-        right: 77%;
+        right: 59%;
+        bottom: 60px;
 
     }
 
@@ -898,7 +889,7 @@ a:hover {
 
     .whatsapp {
         display: none;
-}
+    }
 }
 
 @media (min-width:992px) and (max-width:1200px) {
@@ -1065,5 +1056,5 @@ a:hover {
 
     .whatsapp {
         display: none;
-}
+    }
 }
