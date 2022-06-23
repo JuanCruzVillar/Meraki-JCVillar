@@ -497,11 +497,13 @@ a {
     }
 
     .neneHome {
-        margin-left: 27%;
+        position: relative;
+        left: 10px;
     }
 
     .nenaHome {
-        margin-left: 27%;
+        position: relative;
+        left: 10px;
     }
 
     .quienesSomos {
@@ -511,12 +513,7 @@ a {
         margin-left: 5%;
     }
 
-    .quienesSomosM {
-
-        position: relative;
-        left: 1%;
-    }
-
+    
     .mapaGoogle {
 
         width: 380px;
@@ -825,13 +822,7 @@ a {
         margin-right: 60px;
     }
 
-    .neneHome {
-        margin-left: 27%;
-    }
-
-    .nenaHome {
-        margin-left: 27%;
-    }
+    
 
     .quienesSomos {
 
@@ -910,6 +901,7 @@ a {
 
     .header__tittle {
         position: relative;
+
         font-size: 1.5rem;
     }
 
@@ -922,7 +914,8 @@ a {
         position: absolute;
         width: 200px;
         height: 120px;
-        right: 77%;
+        right: 59%;
+        top: 25px;
 
     }
 
@@ -992,13 +985,7 @@ a {
         margin-right: 60px;
     }
 
-    .neneHome {
-        margin-left: 27%;
-    }
-
-    .nenaHome {
-        margin-left: 27%;
-    }
+   
 
     .quienesSomos {
 
